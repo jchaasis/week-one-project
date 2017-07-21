@@ -6,6 +6,8 @@
 
   <meta charset:"utf-8">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i" rel="stylesheet">
+  <link>
+  <link href="styles.css" rel="stylesheet" title="Default Style">
 
 
 <title>Bent Creek Ceramics </title>
@@ -13,39 +15,44 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-          <img src="images/bent-creek-logo.png" alt= "Bent Creek logo."/>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="newsletter.html">Newsletter</a>
+    <header class="header">
+        <nav class="nav-bar">
+          <img src="images/bent-creek-logo.png" alt= "Bent Creek logo." class="logo"/>
+          <ul class="nav-links">
+              <li class="nav-link">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="newsletter.html" class="nav-link">Newsletter</a>
+              </li>
+            </ul>
+
         </nav>
       <h1>Bent Creek Ceramics </h1>
       <h2>Where art meets nature</h2>
     </header>
 
     <main>
-      <ul>
-        <li>
-          <img src="images/product-1.jpg" alt="Assorted potted cacti on table">
-        </li>
-        <li>
-          <img src="images/product-2.jpg" alt=" Pair of ceramic bowls on a wooden bench">
-        </li>
-          <img src="images/product-3.jpg" alt="Ceramic serving tray.">
-        <li>
-            <img src="images/product-4.jpg" alt="Ceramic tea cup and saucer sitting on the banister of a porch.">
-        </li>
-        <li>
-            <img src="images/product-5.jpg" alt="ceramic jar sitting on the banister of a porch">
-        </li>
-        <li>
-          <img src="images/product-6.jpg" alt="Wasabi bowl and saki karaffe">
-        </li>
-        <li>
-          <img src="images/product-7.jpg" alt="Coffee mug and saucer on the banister of a porch.">
-        </li>
-      </ul>
+
+          <ul class="products">
+            <li class="top" id="possibilities"> <img src="images/product-1.jpg" alt="Assorted potted cacti on table"><h3>Endless Possibilities<h3>
+            </li>
+            <li class="top" id="sets"><img src="images/product-2.jpg" alt=" Pair of ceramic bowls on a wooden bench"><h3>Sets</h3>
+            </li>
+            <li class="top" id="textures"><img src="images/product-3.jpg" alt="Ceramic serving tray."><h3>Textures</h3>
+            </li>
+            <li class="bottom" id="tea"><img src="images/product-4.jpg" alt="Ceramic tea cup and saucer sitting on the banister of a porch."><h3>Tea Time</h3>
+            </li>
+            <li class="bottom" id="jars"><img src="images/product-5.jpg" alt="ceramic jar sitting on the banister of a porch"><h3>Jars and Containers<h3>
+            </li>
+            <li class="bottom" id="wasabi;"> <img src="images/product-6.jpg" alt="Wasabi bowl and saki karaffe"><h3>Wasabi and Saki</h3>
+            </li>
+            <li class="bottom" id="sippin"><img src="images/product-7.jpg" alt="Coffee mug and saucer on the banister of a porch."><h3>Wasabi and Saki</h3>
+            </li>
+          </ul>
 
 
     </main>
