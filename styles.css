@@ -57,7 +57,9 @@ body {
   list-style: none;
   display: flex;
   flex-direction:row;
-  justify-content: space-around;
+  justify-content: center;
+  flex-grow: 1;
+
 }
 
 .nav-link {
@@ -65,7 +67,14 @@ body {
   text-transform: uppercase;
   margin: 0 5px;
   padding:0 10px;
-  flex-grow: 1;
+  align-content: center;
+}
+a:hover{
+  color:#CD5D67;
+}
+
+a:active{
+  color: blue;
 }
 
 .page-heading{
@@ -76,12 +85,17 @@ body {
   margin-bottom: 5px;
   padding-top: 100px;
 }
-
-.header h2{
+main h1{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight:400;
+  padding-top:200px;
+}
+main h2{
   text-align: center;
   font-family: 'Merriweather', serif;
   font-weight:200;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 
@@ -89,12 +103,8 @@ body {
   list-style: none;
   display:flex;
   flex-wrap:wrap;
-    justify-content: space-around;
-
-}
-
-.products img {
-
+  justify-content: space-between;
+  width: 900px;
 }
 
 .products h3 {
@@ -103,34 +113,49 @@ body {
   color: #F2F1E8;
   background-color: black;
 }
-
+.top-row {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  width:900px;
+}
+.bottom-row {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  width:900px;
+  margin: 5px;
+}
 .top img{
+    height:300px;
 
-  height:300px;
 }
 
 .bottom img{
   height: 150px;
 }
 
-#possibilities img{
-flex-grow: 3;
+#possibilities {
+  flex-grow: 3;
 }
 
 #sets{
+  flex-grow: 1;
 }
 
 #textures{
+  flex-grow:1;
 }
 
 #tea{
+  fle
 }
 
 #jars{
 
 }
 #wasabi{
-
+  flex-grow: 2
 }
 #sippin{
 }
@@ -155,9 +180,14 @@ footer {
 }
 
 .about article a {
-
   color: #968772;
+}
 
+.about body h2{
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  font-weight:200;
+  margin-top: 20px;
 }
 
 #birdhouse {
@@ -196,7 +226,7 @@ footer {
   background-size:cover;
   background-position:right;
   color: white;
-  width: 100%;
+  width: 150%;
   align-self:center;
   padding: 40px 0;
 
@@ -224,4 +254,32 @@ footer {
   border: .5px solid black;
   margin: 20px;
   padding: 5px 20px;
+}
+
+#newsletter{
+  display: flex;
+  background-size: cover;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction:column;
+
+}
+
+#form-body{
+  display:flex;
+  width:500px;
+  background-color: white;
+  position:relative;
+  bottom: 300px;
+  flex-direction:column;
+  margin: auto 200px;
+}
+#background-newsletter {
+  width: 1000px;
+}
+
+input {
+  width: 450px;
+  margin: 5px auto;
+  border-bottom: 1px solid black;
 }
