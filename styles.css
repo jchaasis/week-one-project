@@ -2,7 +2,6 @@
 
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif;
-
 Background: #F2F1E8
 Text: #131511
 Inline Link: #968772
@@ -20,18 +19,20 @@ Input Border Bottom (Focus): #967343
 */
 header {
   width: 1000px;
+  margin-top: 0;
 }
 
 body {
   width:1000px;
   background-color:#F2F1E8;
-
 }
 
 .nav-bar {
   display:flex;
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 5px;
+  position:fixed;
+  width: 1000px;
 }
 
 .logo {
@@ -48,19 +49,21 @@ body {
 }
 
 .nav-link {
-  color: black;
+  color: #2B2F26;
   text-transform: uppercase;
   margin: 0 5px;
   padding:0 10px;
   flex-grow: 1;
+
 }
 
-.header h1{
+.page-heading{
   text-align: center;
   font-family: 'Merriweather', serif;
   font-size: 3em;
   font-weight: 400;
   margin-bottom: 5px;
+  padding-top: 100px;
 }
 
 .header h2{
@@ -125,4 +128,89 @@ footer {
   background-color: #131511;
   color:#F2F1E8;
   padding: 10px;
+}
+
+.about {
+  display: flex;
+  width: 600px;
+  flex-direction:column;
+  justify-content:center;
+  font-family: font-family: 'Merriweather', serif;
+  margin-left: 150px;
+
+  line-height: 1.5em;
+}
+
+.about h2{
+  font-weight: 300;
+}
+
+.about article a {
+
+  color: #968772;
+
+}
+
+#birdhouse {
+  width: 100px;
+  float: left;
+  margin: 20px 20px 0px 0px;
+}
+
+#quote {
+  border-left: 1px solid #2B2F26;
+  padding-left: 15px;
+  font-weight: 50;
+  color:#2B2F26;
+  font-style:italic;
+}
+#facilities {
+  display: flex;
+}
+
+#shelf-space{
+  float: right;
+  width: 100px;
+}
+
+#shelf {
+  float: right;
+  font-size: 0.7em;
+  line-height:normal;
+}
+
+#center {
+  text-align: center;
+  font-size: 3em;
+  background-image:url("images/background-3.jpg");
+  background-size:cover;
+  background-position:right;
+  color: white;
+  width: 1000px;
+  align-self:center;
+  padding: 20px 0;
+}
+
+.plans {
+  padding: 0;
+  margin-bottom: 50px;
+  border-spacing: 0px;
+  border: .5px solid black;
+  border-collapse:collapse;
+}
+
+.plans tr:nth-of-type(2n){
+
+  background-color:#968772;
+}
+
+
+#table-header {
+  text-align:center;
+}
+
+.plans td {
+  border: .5px solid black;
+  margin: 20px;
+  padding: 5px 20px;
 }
