@@ -19,12 +19,13 @@ Input Border Bottom (Focus): #967343
 */
 header {
   width: 100%;
-  margin-top: 0;
 }
 
 body {
   width:100%;
   background-color:#F2F1E8;
+  margin:0;
+
 }
 
 .wrapper{
@@ -34,32 +35,30 @@ body {
   justify-content:space-around;
   align-content:center;
   position:absolute;
-
 }
 
 .nav-bar {
   display:flex;
   background-color: #FFFFFF;
-  padding: 5px;
+  padding: ;
   position:fixed;
   justify-content:flex-start;
   width:100%;
 }
 
 .logo {
+  align-self: center;
   width: 30px;
   height: 30px;
-  margin-top: 5px;
-  justify-content:flex-start;
+  margin: 5px;
 }
+
 .nav-links {
   display:flex;
   list-style: none;
-  display: flex;
   flex-direction:row;
+  flex-grow:1;
   justify-content: center;
-  flex-grow: 1;
-
 }
 
 .nav-link {
@@ -67,8 +66,8 @@ body {
   text-transform: uppercase;
   margin: 0 5px;
   padding:0 10px;
-  align-content: center;
 }
+
 a:hover{
   color:#CD5D67;
 }
@@ -89,7 +88,7 @@ main h1{
   text-align: center;
   font-family: 'Merriweather', serif;
   font-weight:400;
-  padding-top:200px;
+  padding-top:150px;
 }
 main h2{
   text-align: center;
@@ -112,6 +111,8 @@ main h2{
   bottom: 80px;
   color: #F2F1E8;
   background-color: black;
+  padding: 0;
+  margin:0;
 }
 .top-row {
   display:flex;
@@ -135,16 +136,17 @@ main h2{
   height: 150px;
 }
 
-#possibilities {
-  flex-grow: 3;
+#possibilities img{
+  width: 500px;
+  margin: 0 5px;
 }
 
-#sets{
-  flex-grow: 1;
+#sets {
+  width: 150px;
 }
 
 #textures{
-  flex-grow:1;
+  width: 150px;
 }
 
 #tea{
@@ -160,23 +162,18 @@ main h2{
 #sippin{
 }
 
-footer {
-  background-color: #131511;
-  color:#F2F1E8;
-  padding: 10px;
-  width: 100%;
-}
-
 .about {
   display: flex;
   width: 600px;
   flex-direction:column;
   font-family: font-family: 'Merriweather', serif;
   line-height: 1.5em;
+
 }
 
 .about h2{
   font-weight: 300;
+  text-align: left;
 }
 
 .about article a {
@@ -241,10 +238,8 @@ footer {
 }
 
 .plans tr:nth-of-type(2n){
-
   background-color:#968772;
 }
-
 
 #table-header {
   text-align:center;
@@ -262,6 +257,8 @@ footer {
   justify-content: space-around;
   align-content: center;
   flex-direction:column;
+  align-items: center;
+  margin-bottom: 0;
 
 }
 
@@ -270,10 +267,13 @@ footer {
   width:500px;
   background-color: white;
   position:relative;
-  bottom: 300px;
+  bottom: 500px;
   flex-direction:column;
-  margin: auto 200px;
+  align-items:center;
+  margin: 0 200px;
+  text-align:center;
 }
+
 #background-newsletter {
   width: 1000px;
 }
@@ -281,5 +281,34 @@ footer {
 input {
   width: 450px;
   margin: 5px auto;
-  border-bottom: 1px solid black;
+  border: none;
+}
+
+.input {
+  border-bottom: 1px solid #968772;
+  margin-top: 10px;
+}
+
+.wrapper .news {
+  min-width: auto;
+}
+
+#signupButton{
+  color: #F2F1E8;
+  background-color: #968772;
+  padding: 15px;
+  margin: 30px 10px;
+  border: none;
+  justify-content: center;
+}
+
+#button a:hover {
+  background-color:#967343;
+}
+
+footer {
+  background-color: #131511;
+  color:#F2F1E8;
+  padding: 10px;
+  width: 100%;
 }
