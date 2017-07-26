@@ -27,7 +27,6 @@ body {
   width:100%;
   background-color:#F2F1E8;
   margin:0;
-
 }
 
 .wrapper{
@@ -80,8 +79,8 @@ a:active{
   font-family: 'Merriweather', serif;
   font-size: 3em;
   font-weight: 400;
-  margin-bottom: 50px;
-  padding-top: 100px;
+  margin-bottom: 10px;
+  padding-top: 70px;
 }
 main h1{
   text-align: center;
@@ -96,93 +95,95 @@ main h2{
   margin-top: 20px;
 }
 
-
-.products{
-  list-style: none;
-  /*display:flex;
-  flex-wrap: wrap;
-  justify-content: center;*/
-  width: 90%;
+.products .top h3 {
+  display:inline-flex;
+  position:relative;
+  top:80%;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding:3px;
+  width: auto;
 }
 
 .products h3 {
-  position: absolute;
-  bottom: 20px;
+  display:inline-flex;
+  position:relative;
+  top:70%;
   color: #F2F1E8;
-  background-color: black;
-  padding: 2px;
-  margin:0;
+  background-color: #2B2F26;
+  padding: 3px;
+  width: auto;
 }
 
-.products li {
-  position: relative;
-}
-
-.top-row {
-  display:flex;
-  justify-content: space-between;
-}
-
-.bottom-row {
-  display:flex;
-  justify-content: space-between;
-}
-.top {
+.products{
   display: flex;
-  justify-content: space-between;
+  flex-direction:column;
+  width:900px;
+  justify-content: center;
+  align-content: center;
 }
 
+.top-row{
+  display:flex;
+  justify-content: space-between;
+  min-height: 300px;
+  margin:5px;
+}
+
+.bottom-row{
+  display:flex;
+  justify-content: space-between;
+  min-height: 200px;
+  margin:5px;
+}
+
+.top{
+  width:100%;
+  margin:5px;
+}
 .bottom{
-  display: flex;
-  flex-wrap: wrap;
+  width:100%;
+  margin:5px;
 }
-
-.top img{
-    height:250px;
-}
-
-.bottom img{
-  height: 150px;
-}
-
-/*
-
-.top-row li:nth-of-type(1){
-flex:2;
-}
-.top-row li:nth-of-type(2){
-flex: 1;
-}
-.top-row li:nth-of-type(3){
-flex: 1;
-}
-
 #possibilities {
-flex:1;
+  background-image:url(images/product-1.jpg);
+  background-size:120%;
+  width:60%;
 }
 
 #sets {
-  flex: 1;
+  background-image:url(images/product-2.jpg);
+  background-size:120%;
+  width: 20%
 }
 
 #textures{
-  flex: 1;
+  background-image:url(images/product-3.jpg);
+  background-size:140%;
+  width: 20%;
 }
 
 #tea{
-
+  background-image:url(images/product-4.jpg);
+  background-size:150%;
+  width: 20%;
 }
 
 #jars{
-
+  background-image:url(images/product-5.jpg);
+  background-size:150%;
+  width: 20%;
 }
-#wasabi{
-
-
+#wasabi{background-image:url(images/product-6.jpg);
+  background-size:120%;
+  width: 40%;
 }
 #sippin{
+  background-image:url(images/product-7.jpg);
+  background-size:150%;
+  width: 20%;
 }
-*/
+
 .about {
   display: flex;
   width: 600px;
@@ -331,7 +332,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 footer {
-  background-color: #131511;
+  background-color: #2B2F26;
   color:#F2F1E8;
   padding: 10px;
   width: 100%;
