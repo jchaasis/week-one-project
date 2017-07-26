@@ -18,6 +18,8 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
 header {
+  display:flex;
+  flex-direction:row;
   width: 100%;
 }
 
@@ -32,32 +34,29 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content:space-around;
-  align-content:center;
+  justify-content:center;
   position:absolute;
 }
 
 .nav-bar {
-  display:flex;
+  display: inline-block;
   background-color: #FFFFFF;
-  padding: ;
   position:fixed;
-  justify-content:flex-start;
   width:100%;
 }
 
 .logo {
-  align-self: center;
+  display:inline-block;
   width: 30px;
   height: 30px;
-  margin: 5px;
+  z-index: 1;
+  position:fixed;
+  top: 10px;
 }
 
 .nav-links {
   display:flex;
   list-style: none;
-  flex-direction:row;
-  flex-grow:1;
   justify-content: center;
 }
 
@@ -73,7 +72,7 @@ a:hover{
 }
 
 a:active{
-  color: blue;
+  color: #968772;
 }
 
 .page-heading{
@@ -81,7 +80,7 @@ a:active{
   font-family: 'Merriweather', serif;
   font-size: 3em;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   padding-top: 100px;
 }
 main h1{
@@ -100,68 +99,90 @@ main h2{
 
 .products{
   list-style: none;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-  width: 900px;
+  /*display:flex;
+  flex-wrap: wrap;
+  justify-content: center;*/
+  width: 90%;
 }
 
 .products h3 {
-  position: relative;
-  bottom: 80px;
+  position: absolute;
+  bottom: 20px;
   color: #F2F1E8;
   background-color: black;
-  padding: 0;
+  padding: 2px;
   margin:0;
 }
+
+.products li {
+  position: relative;
+}
+
 .top-row {
   display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  width:900px;
+  justify-content: space-between;
 }
+
 .bottom-row {
   display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  width:900px;
-  margin: 5px;
+  justify-content: space-between;
 }
-.top img{
-    height:300px;
+.top {
+  display: flex;
+  justify-content: space-between;
+}
 
+.bottom{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top img{
+    height:250px;
 }
 
 .bottom img{
   height: 150px;
 }
 
-#possibilities img{
-  width: 500px;
-  margin: 0 5px;
+/*
+
+.top-row li:nth-of-type(1){
+flex:2;
+}
+.top-row li:nth-of-type(2){
+flex: 1;
+}
+.top-row li:nth-of-type(3){
+flex: 1;
+}
+
+#possibilities {
+flex:1;
 }
 
 #sets {
-  width: 150px;
+  flex: 1;
 }
 
 #textures{
-  width: 150px;
+  flex: 1;
 }
 
 #tea{
-  fle
+
 }
 
 #jars{
 
 }
 #wasabi{
-  flex-grow: 2
+
+
 }
 #sippin{
 }
-
+*/
 .about {
   display: flex;
   width: 600px;
@@ -254,34 +275,40 @@ main h2{
 #newsletter{
   display: flex;
   background-size: cover;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
   flex-direction:column;
   align-items: center;
   margin-bottom: 0;
-
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #form-body{
   display:flex;
-  width:500px;
+  min-width: 40%;
   background-color: white;
-  position:relative;
-  bottom: 500px;
+  position:absolute;
   flex-direction:column;
-  align-items:center;
-  margin: 0 200px;
   text-align:center;
+  padding: 10px;
 }
+#form-body p{
+  font-size: 1.3em;
 
+}
+/* not sure why the below works*/
 #background-newsletter {
-  width: 1000px;
+width: 100%;
+  background-image: url(images/background-2.jpg);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+input {
+  min-width: 450px;
+  border: none;
 }
 
-input {
-  width: 450px;
-  margin: 5px auto;
-  border: none;
+label {
+font-family: 'Roboto', sans-serif;
 }
 
 .input {
@@ -289,11 +316,8 @@ input {
   margin-top: 10px;
 }
 
-.wrapper .news {
-  min-width: auto;
-}
-
 #signupButton{
+  font-family:'Roboto', sans-serif;
   color: #F2F1E8;
   background-color: #968772;
   padding: 15px;
