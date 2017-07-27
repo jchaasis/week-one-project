@@ -321,6 +321,7 @@ font-family: 'Roboto', sans-serif;
 .input {
   border-bottom: 1px solid #968772;
   margin-top: 10px;
+  text-align: left;
 }
 
 #signupButton{
